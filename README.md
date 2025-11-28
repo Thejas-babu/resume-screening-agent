@@ -64,11 +64,9 @@ This project provides an **AI-powered solution** that:
 5. View the final **ranked candidate table**
 6. **Download the results as CSV** for further analysis or sharing
 
----
 
 ## 📁 Project Structure
 
-```bash
 📂 resume-screening-agent/
 ├── agent.py              # Llama3 + Groq integration and screening logic
 ├── resume_parser.py      # PDF/DOCX parsing utilities
@@ -77,19 +75,16 @@ This project provides an **AI-powered solution** that:
 ├── requirements.txt      # Python dependencies
 ├── .gitignore            # Ignore env, venv, caches
 └── README.md             # Project documentation
+
 🚀 Getting Started
 🔹 Prerequisites
+
 Python 3.8+
-
 pip
-
 Git
-
 Groq API Key → https://console.groq.com
 
 🔹 Installation
-bash
-Copy code
 git clone https://github.com/Thejas-babu/resume-screening-agent.git
 cd resume-screening-agent
 
@@ -101,42 +96,42 @@ python -m venv .venv
 # source .venv/bin/activate
 
 pip install -r requirements.txt
-🔹 Environment Setup
-Create a .env file in the project root:
 
-env
-Copy code
+🔹 Environment Setup
+
+Create a .env file in the project root:
 GROQ_API_KEY=your_groq_api_key_here
+
+
 ⚠️ Do not commit .env to GitHub.
 On Streamlit Cloud, put this key instead in Settings → Secrets.
 
 🔹 Run the App Locally
-bash
-Copy code
 streamlit run streamlit_app.py
+
+
 Open in browser:
 👉 http://localhost:8501
 
 🌐 Deployment (Streamlit Cloud)
+
 Push this project to GitHub
-
 Go to https://share.streamlit.io
-
 Create a new app, select your repo and streamlit_app.py as the main file
-
 In App → Settings → Secrets, add:
-
-env
-Copy code
 GROQ_API_KEY="your_groq_key_here"
+
+
 Deploy and share the URL 🎉
 
 👨‍💻 Contributors
+
 Thejas Babu R – Developer
 
-(Add more names if working as a team)
+
 
 🧭 Future Enhancements
+
 🧩 Skill-based matching using embeddings
 
 📈 Analytics: charts for score distribution
@@ -147,5 +142,7 @@ Thejas Babu R – Developer
 
 🌐 Multi-language resume support
 
+
 📜 License
+
 This project is licensed under the MIT License – free to use, modify and distribute.
