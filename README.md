@@ -1,3 +1,4 @@
+
 # 📄 AI Resume Screening Agent – Llama3 + Groq + Streamlit
 
 This project automates the **resume screening process** using AI by comparing multiple candidate resumes against a given Job Description (JD) and ranking them based on fit.  
@@ -64,9 +65,11 @@ This project provides an **AI-powered solution** that:
 5. View the final **ranked candidate table**
 6. **Download the results as CSV** for further analysis or sharing
 
+---
 
 ## 📁 Project Structure
 
+```bash
 📂 resume-screening-agent/
 ├── agent.py              # Llama3 + Groq integration and screening logic
 ├── resume_parser.py      # PDF/DOCX parsing utilities
@@ -75,16 +78,24 @@ This project provides an **AI-powered solution** that:
 ├── requirements.txt      # Python dependencies
 ├── .gitignore            # Ignore env, venv, caches
 └── README.md             # Project documentation
+````
 
-🚀 Getting Started
-🔹 Prerequisites
+---
 
-Python 3.8+
-pip
-Git
-Groq API Key → https://console.groq.com
+## 🚀 Getting Started
 
-🔹 Installation
+### 🔹 Prerequisites
+
+* Python 3.8+
+* pip
+* Git
+* Groq API Key → [https://console.groq.com](https://console.groq.com)
+
+---
+
+### 🔹 Installation
+
+```bash
 git clone https://github.com/Thejas-babu/resume-screening-agent.git
 cd resume-screening-agent
 
@@ -96,53 +107,68 @@ python -m venv .venv
 # source .venv/bin/activate
 
 pip install -r requirements.txt
+```
 
-🔹 Environment Setup
+---
 
-Create a .env file in the project root:
+### 🔹 Environment Setup
+
+Create a `.env` file in the project root:
+
+```env
 GROQ_API_KEY=your_groq_api_key_here
+```
 
+> ⚠️ Do **not** commit `.env` to GitHub.
+> On **Streamlit Cloud**, put this key instead in **Settings → Secrets**.
 
-⚠️ Do not commit .env to GitHub.
-On Streamlit Cloud, put this key instead in Settings → Secrets.
+---
 
-🔹 Run the App Locally
+### 🔹 Run the App Locally
+
+```bash
 streamlit run streamlit_app.py
-
+```
 
 Open in browser:
-👉 http://localhost:8501
+👉 [http://localhost:8501](http://localhost:8501)
 
-🌐 Deployment (Streamlit Cloud)
+---
 
-Push this project to GitHub
-Go to https://share.streamlit.io
-Create a new app, select your repo and streamlit_app.py as the main file
-In App → Settings → Secrets, add:
+## 🌐 Deployment (Streamlit Cloud)
+
+1. Push this project to GitHub
+2. Go to **[https://share.streamlit.io](https://share.streamlit.io)**
+3. Create a new app, select your repo and `streamlit_app.py` as the main file
+4. In **App → Settings → Secrets**, add:
+
+```env
 GROQ_API_KEY="your_groq_key_here"
+```
+
+5. Deploy and share the URL 🎉
+
+---
+
+## 👨‍💻 Contributors
+
+* **Thejas Babu R** – Developer
+* (Add more names if working as a team)
+
+---
+
+## 🧭 Future Enhancements
+
+* 🧩 Skill-based matching using embeddings
+* 📈 Analytics: charts for score distribution
+* 🧾 Individual candidate PDF reports
+* 🧪 ATS integration and resume parsing enhancements
+* 🌐 Multi-language resume support
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – free to use, modify and distribute.
 
 
-Deploy and share the URL 🎉
-
-👨‍💻 Contributors
-
-Thejas Babu R – Developer
-
-
-
-🧭 Future Enhancements
-
-🧩 Skill-based matching using embeddings
-
-📈 Analytics: charts for score distribution
-
-🧾 Individual candidate PDF reports
-
-🧪 ATS integration and resume parsing enhancements
-
-🌐 Multi-language resume support
-
-
-📜 License
-
-This project is licensed under the MIT License – free to use, modify and distribute.
